@@ -100,7 +100,7 @@ class Redis
             elsif @nodes.empty?
               @master
             else
-              @index = (@index + 1) % @nodes.length
+              @index = (@index + 1) % @slaves.length
               @slaves[@index]
             end
           end
