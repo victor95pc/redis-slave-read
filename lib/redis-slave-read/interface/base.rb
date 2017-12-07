@@ -101,7 +101,7 @@ class Redis
               @master
             else
               @index = (@index + 1) % @nodes.length
-              @nodes[@index]
+              @slaves[@index]
             end
           end
         end
